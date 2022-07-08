@@ -13,10 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\dz3Binary.BLL\dz3Binary.BLL.csproj" />
     <ProjectReference Include="..\dz3Binary.Common\dz3Binary.Common.csproj" />
     <ProjectReference Include="..\dz3Binary.DAL\dz3Binary.DAL.csproj" />

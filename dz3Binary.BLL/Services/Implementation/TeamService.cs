@@ -12,7 +12,7 @@ public class TeamService : ServiceBase, ITeamService
     {
     }
 
-    public IEnumerable<IdNameMembersOnlyTeamDTO> GetTeam() => _context
+    public IEnumerable<IdNameMembersOnlyTeamDTO> GetTeamInfo() => _context
             .Teams.Where(t => t.Members.All(t => (DateTime.Today.Year - t.BirthDay.Year) > 10))
             .Select(t =>
             {

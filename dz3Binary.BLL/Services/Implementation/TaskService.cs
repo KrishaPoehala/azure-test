@@ -12,10 +12,10 @@ public class TaskService : ServiceBase, ITaskService
     {
     }
 
-    public IDictionary<ProjectDTO, int> GetTasksCountByProject(int userId) => _context
+    public IDictionary<int, ProjectDTO> GetTasksCountByProject(int userId) => _context
             .Projects.Where(p => p.AuthorId == userId)
             .Select(p => _mapper.Map<ProjectDTO>(p))
-            .ToDictionary(p => p, p => p.Tasks.Count);
+            .ToDictionary(p => p.Tasks.Count);
 
     public IEnumerable<TaskDTO> GetTasks(int userId) => _context
             .Tasks.Where(t => t.PerformerId == userId && t.Name.Length < 45)

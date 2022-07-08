@@ -4,7 +4,7 @@ using dz3Binary.Common.DTO.User;
 
 namespace dz3Binary.Common.DTO.Project;
 
-public record ProjectDTO
+public record struct ProjectDTO
 {
     public int AuthorId { get; init; }
     public UserDTO Author { get; init; }

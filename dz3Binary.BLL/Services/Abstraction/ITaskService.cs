@@ -7,5 +7,5 @@ public interface ITaskService
 {
     IEnumerable<IdNameOnlyTaskDTO> GetFinishedTasks(int userId);
     IEnumerable<TaskDTO> GetTasks(int userId);
-    IDictionary<ProjectDTO, int> GetTasksCountByProject(int userId);
+    IDictionary<int, ProjectDTO> GetTasksCountByProject(int userId);
 }

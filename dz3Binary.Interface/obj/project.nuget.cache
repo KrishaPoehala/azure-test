@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "sFdlxEs4PYDkGtDl99IwWosFl0pET7CgA/iGHyfz8Xwpf3loSZdF7B13mgRrzc0x5g88/t+s2EwqQsz/XJoscA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.Interface\\dz3Binary.Interface.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\huawei\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\huawei\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\huawei\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

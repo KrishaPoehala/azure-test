@@ -4,6 +4,7 @@ namespace dz3Binary.BLL.Services.Abstraction
 {
     public interface ITeamService
     {
-        IEnumerable<IdNameMembersOnlyTeamDTO> GetTeam();
+        IEnumerable<IdNameMembersOnlyTeamDTO> GetTeamInfo();
+
     }
 }

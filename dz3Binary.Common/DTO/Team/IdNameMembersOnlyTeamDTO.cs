@@ -4,5 +4,5 @@ public record IdNameMembersOnlyTeamDTO
 {
     public int Id { get; init; }
     public string Name { get; init; }
-    public ICollection<UserDTO> Users { get; init; }
+    public ICollection<UserDTO> Members { get; init; }
 }

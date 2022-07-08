@@ -10,7 +10,7 @@ public class ProjectContext
     public CustomSet<Project> Projects { get; set; }
 
     public ProjectContext()
-    {
+    { 
         Teams = new(new TeamLoader());
         Tasks = new(new TaskLoader());
         Users = new(new UserLoader());
