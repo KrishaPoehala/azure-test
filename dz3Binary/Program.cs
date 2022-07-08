@@ -1,9 +1,15 @@
+using dz3Binary.Common.Profiles;
+using dz3Binary.DAL;
+using dz3Binary.Extentions;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddSingleton<ProjectContext>();
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddCustomServices();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

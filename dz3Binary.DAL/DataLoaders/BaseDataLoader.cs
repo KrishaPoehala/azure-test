@@ -5,10 +5,10 @@ namespace dz3Binary.DAL.DataLoaders;
 
 public abstract class BaseDataLoader<T> : IDataLoader<T>
 {
-    protected static ICollection<Entities.Task> _tasks;
-    protected static ICollection<User> _users;
-    protected static ICollection<Project> _projects;
-    protected static ICollection<Team> _teams;
+    protected static readonly ICollection<Entities.Task> _tasks;
+    protected static readonly ICollection<User> _users;
+    protected static readonly ICollection<Project> _projects;
+    protected static readonly ICollection<Team> _teams;
 
     //cannot use await
     static BaseDataLoader()

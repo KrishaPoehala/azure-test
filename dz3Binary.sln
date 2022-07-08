@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz3Binary", "dz3Binary\dz3B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz3Binary.DAL", "dz3Binary.DAL\dz3Binary.DAL.csproj", "{0FF239D5-ADB9-45A3-BDA7-C1D18BE7E4BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz3Binary.BLL", "dz3Binary.BLL\dz3Binary.BLL.csproj", "{1645C8C6-D890-46A5-B7ED-9E5BA9EDA2C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz3Binary.Common", "dz3Binary.Common\dz3Binary.Common.csproj", "{6CBA08DA-8CA0-46A2-BCCD-AC452B9E9365}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0FF239D5-ADB9-45A3-BDA7-C1D18BE7E4BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF239D5-ADB9-45A3-BDA7-C1D18BE7E4BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FF239D5-ADB9-45A3-BDA7-C1D18BE7E4BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1645C8C6-D890-46A5-B7ED-9E5BA9EDA2C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1645C8C6-D890-46A5-B7ED-9E5BA9EDA2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1645C8C6-D890-46A5-B7ED-9E5BA9EDA2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1645C8C6-D890-46A5-B7ED-9E5BA9EDA2C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBA08DA-8CA0-46A2-BCCD-AC452B9E9365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBA08DA-8CA0-46A2-BCCD-AC452B9E9365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBA08DA-8CA0-46A2-BCCD-AC452B9E9365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBA08DA-8CA0-46A2-BCCD-AC452B9E9365}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

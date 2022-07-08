@@ -25,3 +25,12 @@ C:\Users\huawei\source\repos\dz3Binary\dz3Binary\obj\Debug\net6.0\dz3Binary.dll
 C:\Users\huawei\source\repos\dz3Binary\dz3Binary\obj\Debug\net6.0\ref\dz3Binary.dll
 C:\Users\huawei\source\repos\dz3Binary\dz3Binary\obj\Debug\net6.0\dz3Binary.pdb
 C:\Users\huawei\source\repos\dz3Binary\dz3Binary\obj\Debug\net6.0\dz3Binary.genruntimeconfig.cache
+C:\Users\huawei\source\repos\dz3Binary\dz3Binary\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\huawei\source\repos\dz3Binary\dz3Binary\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\huawei\source\repos\dz3Binary\dz3Binary\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\huawei\source\repos\dz3Binary\dz3Binary\bin\Debug\net6.0\dz3Binary.BLL.dll
+C:\Users\huawei\source\repos\dz3Binary\dz3Binary\bin\Debug\net6.0\dz3Binary.Common.dll
+C:\Users\huawei\source\repos\dz3Binary\dz3Binary\bin\Debug\net6.0\dz3Binary.DAL.dll
+C:\Users\huawei\source\repos\dz3Binary\dz3Binary\bin\Debug\net6.0\dz3Binary.BLL.pdb
+C:\Users\huawei\source\repos\dz3Binary\dz3Binary\bin\Debug\net6.0\dz3Binary.Common.pdb
+C:\Users\huawei\source\repos\dz3Binary\dz3Binary\bin\Debug\net6.0\dz3Binary.DAL.pdb
