@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AMgzHmVkKuPOlu3vXixh+jbqErc+y3ztcAzmoSEZv/SYFYCdyCi12vCBqK9iOdV2DxL/OJ25M+l4inlyAYvKig==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\huawei\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
