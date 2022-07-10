@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "64674bc1-1ca5-40a9-932a-7af1e48ac5b6": {
+      "ProjectGuid": "64674bc1-1ca5-40a9-932a-7af1e48ac5b6",
+      "DisplayName": "dz3Binary",
+      "ColorIndex": 0
+    },
+    "0ff239d5-adb9-45a3-bda7-c1d18be7e4be": {
+      "ProjectGuid": "0ff239d5-adb9-45a3-bda7-c1d18be7e4be",
+      "DisplayName": "dz3Binary.DAL",
+      "ColorIndex": 1
+    },
+    "1645c8c6-d890-46a5-b7ed-9e5ba9eda2c6": {
+      "ProjectGuid": "1645c8c6-d890-46a5-b7ed-9e5ba9eda2c6",
+      "DisplayName": "dz3Binary.BLL",
+      "ColorIndex": 2
+    },
+    "6cba08da-8ca0-46a2-bccd-ac452b9e9365": {
+      "ProjectGuid": "6cba08da-8ca0-46a2-bccd-ac452b9e9365",
+      "DisplayName": "dz3Binary.Common",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "a26f198a-1b0b-45b0-8d60-da35494be576": {
+      "ProjectGuid": "a26f198a-1b0b-45b0-8d60-da35494be576",
+      "DisplayName": "dz3Binary.Interface",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

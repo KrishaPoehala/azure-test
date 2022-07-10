@@ -30,7 +30,7 @@ public class Commands
          "gets the tasks for a user identified by its id", 2)]
     public IEnumerable<TaskDTO> GetTasks(int id)
     {
-        var response = _client.GetAsync(BASE_URL + "/Task/" + id)
+        var response = _client.GetAsync(BASE_URL + "/Task/tasks" + id)
             .GetAwaiter().GetResult();
         var str = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
         return JsonConvert.DeserializeObject<IEnumerable<TaskDTO>>(str);
@@ -40,7 +40,7 @@ public class Commands
          "gets tasks that were finished in 2022", 3)]
     public IEnumerable<IdNameOnlyTaskDTO> GetFinishedTasks(int id)
     {
-        var response = _client.GetAsync(BASE_URL + "/Task/tasksCountByProject" + id)
+        var response = _client.GetAsync(BASE_URL + "/Task/finishedTasks" + id)
             .GetAwaiter().GetResult();
         var str = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
         return JsonConvert.DeserializeObject<IEnumerable<IdNameOnlyTaskDTO>>(str);
@@ -50,7 +50,7 @@ public class Commands
           "gets the list of teams which members are older than 10 years", 4)]
     public IEnumerable<IdNameMembersOnlyTeamDTO> GetTeams()
     {
-        var response = _client.GetAsync(BASE_URL + "/Task/tasksCountByProject")
+        var response = _client.GetAsync(BASE_URL + "/Task/teamInfo")
             .GetAwaiter().GetResult();
         var str = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
         return JsonConvert.DeserializeObject<IEnumerable<IdNameMembersOnlyTeamDTO>>(str);
