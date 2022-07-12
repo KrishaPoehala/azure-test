@@ -14,6 +14,7 @@ public class TeamService : ServiceBase, ITeamService
 
     public IEnumerable<IdNameMembersOnlyTeamDTO> GetTeamInfo() => _context
             .Teams.Where(t => t.Members.All(t => (DateTime.Today.Year - t.BirthDay.Year) > 10))
+            .AsEnumerable()
             .Select(t =>
             {
                 t.Members = t.Members.OrderByDescending(m => m.RegisteredAt).ToLinkedList();

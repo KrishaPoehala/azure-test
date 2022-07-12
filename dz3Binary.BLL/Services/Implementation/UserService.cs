@@ -5,6 +5,7 @@ using dz3Binary.Common.DTO.Task;
 using dz3Binary.Common.DTO.User;
 using dz3Binary.DAL;
 using dz3Binary.DAL.Extentions;
+using Microsoft.EntityFrameworkCore;
 
 namespace dz3Binary.BLL.Services.Abstraction;
 public class UserService : ServiceBase, IUserService
@@ -15,6 +16,7 @@ public class UserService : ServiceBase, IUserService
 
     public IEnumerable<UserDTO> GetSortedUsers() => _context
             .Users.OrderBy(u => u.FirstName)
+            .AsEnumerable()
             .Select(u =>
             {
                 u.Tasks = u.Tasks.OrderBy(t => t.Name).ToLinkedList();
@@ -22,7 +24,8 @@ public class UserService : ServiceBase, IUserService
             });
 
     public IEnumerable<UserTasksInfoDTO> GetTasksInfo(int userId) => _context
-            .Users.Select(u => new UserTasksInfoDTO
+            .Users.Include(u => u.ProjectsCreated).AsEnumerable()
+            .Select(u => new UserTasksInfoDTO
             {
                 User = _mapper.Map<UserDTO>(u),
                 LastProject = _mapper.Map<ProjectDTO>(u.ProjectsCreated.MaxBy(p => p.CreatedAt)),

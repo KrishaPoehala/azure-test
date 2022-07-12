@@ -1,19 +1,25 @@
-﻿using dz3Binary.DAL.DataLoaders;
+﻿using Bogus;
+using dz3Binary.DAL.DataLoaders;
 using dz3Binary.DAL.Entities;
+using dz3Binary.DAL.Extentions;
+using Microsoft.EntityFrameworkCore;
+
 namespace dz3Binary.DAL;
 
-public class ProjectContext
+public class ProjectContext : DbContext
 {
-    public CustomSet<Team> Teams { get; set; }
-    public CustomSet<User> Users { get; set; }
-    public CustomSet<Entities.Task> Tasks { get; set; }
-    public CustomSet<Project> Projects { get; set; }
+    public DbSet<Team> Teams { get; set; }
+    public DbSet<User> Users { get; set; }
+    public DbSet<Entities.Task> Tasks { get; set; }
+    public DbSet<Project> Projects { get; set; }
 
-    public ProjectContext()
-    { 
-        Teams = new(new TeamLoader());
-        Tasks = new(new TaskLoader());
-        Users = new(new UserLoader());
-        Projects = new(new ProjectLoader());
+    public ProjectContext(DbContextOptions<ProjectContext> options) : base(options)
+    {
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Configure();
+        modelBuilder.Seed();
     }
 }

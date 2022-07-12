@@ -29,7 +29,6 @@ public class UserInterface
     }
     public async Task Run()
     {
-        await _commands.Setup();
         Console.WriteLine("Welcome to my program! Print help to see the commands");
         while (true)
         {

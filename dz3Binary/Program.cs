@@ -1,13 +1,14 @@
 using dz3Binary.Common.Profiles;
 using dz3Binary.DAL;
 using dz3Binary.Extentions;
+using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
-
-
-
-builder.Services.AddControllers();
-builder.Services.AddSingleton<ProjectContext>();
+builder.Services.AddControllers().AddJsonOptions(option =>  
+option.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+builder.Services.AddDbContext<ProjectContext>(opt => 
+opt.UseSqlServer(builder.Configuration.GetConnectionString("ProjectDatabase")));
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddCustomServices();
 builder.Services.AddEndpointsApiExplorer();

@@ -2,6 +2,7 @@
 using dz3Binary.Common.DTO.Project;
 using dz3Binary.Common.DTO.Task;
 using dz3Binary.DAL;
+using Microsoft.EntityFrameworkCore;
 
 namespace dz3Binary.BLL.Services.Abstraction;
 
@@ -12,7 +13,11 @@ public class ProjectService : ServiceBase, IProjectService
     }
 
     public IEnumerable<ProjectTasksInfoDTO> GetProjectInfo() => _context
-            .Projects.Select(p => new ProjectTasksInfoDTO
+            .Projects
+            .Include(p => p.Tasks)
+            .Include(p => p.Team.Members)
+            .Select(p => _mapper.Map<ProjectDTO>(p))
+            .AsEnumerable().Select(p => new ProjectTasksInfoDTO
             {
                 Project = _mapper.Map<ProjectDTO>(p),
                 LongestTask = _mapper.Map<TaskDTO>(p.Tasks.MaxBy(t => t.Description)),
