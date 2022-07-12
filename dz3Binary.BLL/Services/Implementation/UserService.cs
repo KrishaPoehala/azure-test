@@ -3,7 +3,7 @@ using dz3Binary.BLL.Services.Abstraction;
 using dz3Binary.Common.DTO.Project;
 using dz3Binary.Common.DTO.Task;
 using dz3Binary.Common.DTO.User;
-using dz3Binary.DAL;
+using dz3Binary.DAL.Context;
 using dz3Binary.DAL.Extentions;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,7 +19,7 @@ public class UserService : ServiceBase, IUserService
             .AsEnumerable()
             .Select(u =>
             {
-                u.Tasks = u.Tasks.OrderBy(t => t.Name).ToLinkedList();
+                u.Tasks = u.Tasks.OrderBy(t => t.RenamedName).ToLinkedList();
                 return _mapper.Map<UserDTO>(u);
             });
 

@@ -2,7 +2,7 @@
 using dz3Binary.BLL.Services.Abstraction;
 using dz3Binary.Common.DTO.Project;
 using dz3Binary.Common.DTO.Task;
-using dz3Binary.DAL;
+using dz3Binary.DAL.Context;
 
 namespace dz3Binary.BLL.Services.Abstraction;
 
@@ -18,7 +18,7 @@ public class TaskService : ServiceBase, ITaskService
             .ToDictionary(p => p.Tasks.Count);
 
     public IEnumerable<TaskDTO> GetTasks(int userId) => _context
-            .Tasks.Where(t => t.PerformerId == userId && t.Name.Length < 45)
+            .Tasks.Where(t => t.PerformerId == userId && t.RenamedName.Length < 45)
             .Select(t => _mapper.Map<TaskDTO>(t));
 
     public IEnumerable<IdNameOnlyTaskDTO> GetFinishedTasks(int userId) => _context

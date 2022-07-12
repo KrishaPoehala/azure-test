@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using dz3Binary.DAL;
+using dz3Binary.DAL.Context;
 
 namespace dz3Binary.BLL.Services.Abstraction;
 

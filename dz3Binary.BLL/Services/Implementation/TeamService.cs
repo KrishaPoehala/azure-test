@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
 using dz3Binary.BLL.Services.Abstraction;
 using dz3Binary.Common.DTO.Team;
-using dz3Binary.DAL;
+using dz3Binary.DAL.Context;
 using dz3Binary.DAL.Extentions;
+using Microsoft.EntityFrameworkCore;
 
 namespace dz3Binary.BLL.Services.Abstraction;
 
@@ -13,7 +14,9 @@ public class TeamService : ServiceBase, ITeamService
     }
 
     public IEnumerable<IdNameMembersOnlyTeamDTO> GetTeamInfo() => _context
-            .Teams.Where(t => t.Members.All(t => (DateTime.Today.Year - t.BirthDay.Year) > 10))
+            .Teams
+            .Include(t => t.Members)
+            .Where(t => t.Members.All(t => (DateTime.Today.Year - t.BirthDay.Year) > 10) || true)
             .AsEnumerable()
             .Select(t =>
             {

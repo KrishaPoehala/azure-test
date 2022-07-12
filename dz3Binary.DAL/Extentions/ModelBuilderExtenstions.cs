@@ -31,9 +31,9 @@ public static class ModelBuilderExtenstions
 
         modelBuilder.Entity<User>()
             .HasOne(u => u.Team)
-            .WithMany()
-            .OnDelete(DeleteBehavior.Restrict)
-            .HasForeignKey(u => u.TeamId);
+            .WithMany(t => t.Members)
+            .HasForeignKey(u => u.TeamId)
+            .OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<User>()
             .HasMany(u => u.ProjectsCreated)
@@ -49,7 +49,7 @@ public static class ModelBuilderExtenstions
 
         modelBuilder.Entity<Entities.Task>()
             .HasOne(t => t.Project)
-            .WithMany()
+            .WithMany(p => p.Tasks)
             .HasForeignKey(t => t.ProjectId)
             .OnDelete(DeleteBehavior.Restrict);
 
@@ -93,7 +93,7 @@ public static class ModelBuilderExtenstions
             .RuleFor(x => x.BirthDay, f => f.Date.Past())
             .RuleFor(x => x.TeamId, f => f.PickRandom(teams).Id);
 
-        return taskFaker.Generate(5);
+        return taskFaker.Generate(30);
     }
 
     private static IList<Project> GenerateProjects(IList<User> users, IList<Team> teams)
@@ -109,7 +109,7 @@ public static class ModelBuilderExtenstions
             .RuleFor(x => x.AuthorId, f => f.PickRandom(users).Id)
             .RuleFor(x => x.TeamId, f=> f.PickRandom(teams).Id);
 
-        return projectFaker.Generate(3);
+        return projectFaker.Generate(20);
     }
 
     private static IList<Entities.Task> GenerateTasks(IList<Project> projects, IList<User> users)
@@ -118,7 +118,7 @@ public static class ModelBuilderExtenstions
 
         var taskFaker = new Faker<Entities.Task>()
                     .RuleFor(x => x.Id, f => index++)
-                    .RuleFor(x => x.Name, f => f.Name.FirstName())
+                    .RuleFor(x => x.RenamedName, f => f.Name.FirstName())
                     .RuleFor(x => x.Description, f => f.Lorem.Sentence(5))
                     .RuleFor(x => x.State, f => f.Random.Int(0, 3))
                     .RuleFor(x => x.CreatedAt, f => f.Date.Past())
@@ -126,6 +126,6 @@ public static class ModelBuilderExtenstions
                     .RuleFor(x => x.ProjectId, f => f.PickRandom(projects).Id)
                     .RuleFor(x => x.PerformerId, f => f.PickRandom(users).Id);
 
-        return taskFaker.Generate(10);
+        return taskFaker.Generate(100);
     }
 }

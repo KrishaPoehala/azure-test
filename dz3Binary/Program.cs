@@ -1,5 +1,5 @@
 using dz3Binary.Common.Profiles;
-using dz3Binary.DAL;
+using dz3Binary.DAL.Context;
 using dz3Binary.Extentions;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
