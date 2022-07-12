@@ -3,6 +3,7 @@ using dz3Binary.BLL.Services.Abstraction;
 using dz3Binary.Common.DTO.Project;
 using dz3Binary.Common.DTO.Task;
 using dz3Binary.DAL.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace dz3Binary.BLL.Services.Abstraction;
 
@@ -13,7 +14,9 @@ public class TaskService : ServiceBase, ITaskService
     }
 
     public IDictionary<int, ProjectDTO> GetTasksCountByProject(int userId) => _context
-            .Projects.Where(p => p.AuthorId == userId)
+            .Projects
+            .Include(p => p.Tasks)
+            .Where(p => p.AuthorId == userId)
             .Select(p => _mapper.Map<ProjectDTO>(p))
             .ToDictionary(p => p.Tasks.Count);
 

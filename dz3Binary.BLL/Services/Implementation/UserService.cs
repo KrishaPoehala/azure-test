@@ -24,7 +24,12 @@ public class UserService : ServiceBase, IUserService
             });
 
     public IEnumerable<UserTasksInfoDTO> GetTasksInfo(int userId) => _context
-            .Users.Include(u => u.ProjectsCreated).AsEnumerable()
+            .Users
+            .Where(u => u.Id == userId)
+            .Include(u => u.Tasks)
+            .Include(u => u.ProjectsCreated)
+                .ThenInclude(p => p.Tasks)
+            .AsEnumerable()
             .Select(u => new UserTasksInfoDTO
             {
                 User = _mapper.Map<UserDTO>(u),

@@ -38,14 +38,14 @@ public static class ModelBuilderExtenstions
         modelBuilder.Entity<User>()
             .HasMany(u => u.ProjectsCreated)
             .WithOne(p => p.Author)
-            .OnDelete(DeleteBehavior.Restrict)
-            .HasForeignKey(u => u.AuthorId);
+            .HasForeignKey(u => u.AuthorId)
+            .OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<User>()
             .HasMany(u => u.Tasks)
             .WithOne(t => t.Performer)
-            .OnDelete(DeleteBehavior.Restrict)
-            .HasForeignKey(t => t.PerformerId);
+            .HasForeignKey(t => t.PerformerId)
+            .OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<Entities.Task>()
             .HasOne(t => t.Project)
