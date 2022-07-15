@@ -61,17 +61,17 @@ public static class ModelBuilderExtenstions
     }
     public static void Seed(this ModelBuilder modelBuilder)
     {
-        var teams = GenerateTeams();
-        var users = GenerateUsers(teams);
-        var projects = GenerateProjects(users, teams);
-        var tasks = GenerateTasks(projects, users);
+        var teams = GenerateTeams(2);
+        var users = GenerateUsers(teams,10);
+        var projects = GenerateProjects(users, teams,20);
+        var tasks = GenerateTasks(projects, users,100);
         modelBuilder.Entity<Team>().HasData(teams);
         modelBuilder.Entity<User>().HasData(users);
         modelBuilder.Entity<Project>().HasData(projects);
         modelBuilder.Entity<Entities.Task>().HasData(tasks);
     }
 
-    private static IList<Team> GenerateTeams()
+    public static IList<Team> GenerateTeams(int count)
     {
         int index = 1;
         var teamFaker = new Faker<Team>()
@@ -79,12 +79,12 @@ public static class ModelBuilderExtenstions
             .RuleFor(x => x.Name, f => f.Company.CompanyName())
             .RuleFor(x => x.CreatedAt, f => f.Date.Past());
 
-        return teamFaker.Generate(2);
+        return teamFaker.Generate(count);//2
     }
 
-    private static IList<User> GenerateUsers(IList<Team> teams)
+    public static IList<User> GenerateUsers(IList<Team> teams,int count)
     {
-        var index = 1;
+        var index = 12;
         var taskFaker = new Faker<User>()
             .RuleFor(x => x.Id, f => index++)
             .RuleFor(x => x.FirstName, f => f.Name.FirstName())
@@ -93,12 +93,12 @@ public static class ModelBuilderExtenstions
             .RuleFor(x => x.BirthDay, f => f.Date.Past())
             .RuleFor(x => x.TeamId, f => f.PickRandom(teams).Id);
 
-        return taskFaker.Generate(30);
+        return taskFaker.Generate(count);//30
     }
 
-    private static IList<Project> GenerateProjects(IList<User> users, IList<Team> teams)
+    public static IList<Project> GenerateProjects(IList<User> users, IList<Team> teams,int count)
     {
-        var index = 1;
+        var index = 12;
         var projectFaker = new Faker<Project>()
             .RuleFor(x => x.Id, f => index++)
             .RuleFor(x => x.Name, f => f.Name.JobArea())
@@ -109,12 +109,12 @@ public static class ModelBuilderExtenstions
             .RuleFor(x => x.AuthorId, f => f.PickRandom(users).Id)
             .RuleFor(x => x.TeamId, f=> f.PickRandom(teams).Id);
 
-        return projectFaker.Generate(20);
+        return projectFaker.Generate(count);//20
     }
 
-    private static IList<Entities.Task> GenerateTasks(IList<Project> projects, IList<User> users)
+    public static IList<Entities.Task> GenerateTasks(IList<Project> projects, IList<User> users,int count)
     {
-        var index = 1;
+        var index = 12;
 
         var taskFaker = new Faker<Entities.Task>()
                     .RuleFor(x => x.Id, f => index++)
@@ -126,6 +126,6 @@ public static class ModelBuilderExtenstions
                     .RuleFor(x => x.ProjectId, f => f.PickRandom(projects).Id)
                     .RuleFor(x => x.PerformerId, f => f.PickRandom(users).Id);
 
-        return taskFaker.Generate(100);
+        return taskFaker.Generate(count);//100
     }
 }

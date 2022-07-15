@@ -37,4 +37,28 @@ public class TaskController : ControllerBase
     {
         return Ok(_taskService.GetFinishedTasks(userId));
     }
+
+    [HttpDelete]
+    [Route("delete/{id}")]
+    public async Task<ActionResult<TaskDTO>> DeleteTask(int id)
+    {
+        try
+        {
+            return Ok(await _taskService.DeleteTask(id));
+        }
+        catch 
+        {
+            return NotFound();
+        }
+    }
+    [HttpGet]
+    [Route("getFirst")]
+    public async Task<ActionResult<TaskDTO>> GetFirst()
+    {
+        return Ok(await _taskService.GetFirst());
+    }
+
+
+
+
 }

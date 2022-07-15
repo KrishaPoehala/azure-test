@@ -28,4 +28,29 @@ public class UserController : ControllerBase
     {
         return Ok(_userService.GetTasksInfo(userId));
     }
+
+    [HttpDelete]
+    [Route("delete/{id}")]
+    public async Task<ActionResult<UserDTO>> DeleteUser(int id)
+    {
+        if (id < 0)
+            return BadRequest();
+
+        try
+        {
+            var userToDelete = await _userService.DeleteUser(id);
+            return Ok(userToDelete);
+        }
+        catch
+        {
+            return NotFound();
+        }
+    }
+
+    [HttpGet]
+    [Route("getFirst")]
+    public async Task<ActionResult<UserDTO>> GetFirst()
+    {
+        return Ok(await _userService.GetFirst());
+    }
 }

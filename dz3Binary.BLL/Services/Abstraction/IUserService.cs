@@ -6,5 +6,7 @@ namespace dz3Binary.BLL.Services.Abstraction
     {
         IEnumerable<UserDTO> GetSortedUsers();
         IEnumerable<UserTasksInfoDTO> GetTasksInfo(int userId);
+        Task<DeletedUserDTO> DeleteUser(int userId);
+        Task<UserDTO> GetFirst();
     }
 }

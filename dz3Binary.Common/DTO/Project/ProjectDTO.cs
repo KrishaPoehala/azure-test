@@ -6,6 +6,7 @@ namespace dz3Binary.Common.DTO.Project;
 
 public record ProjectDTO
 {
+    public int Id { get; init; }
     public string Name { get; init; }
     public string? Description { get; init; }
     public DateTime Deadline { get; init; }

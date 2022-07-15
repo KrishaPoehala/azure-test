@@ -4,6 +4,7 @@ using dz3Binary.Common.DTO.Project;
 using dz3Binary.Common.DTO.Task;
 using dz3Binary.Common.DTO.User;
 using dz3Binary.DAL.Context;
+using dz3Binary.DAL.Entities;
 using dz3Binary.DAL.Extentions;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +13,24 @@ public class UserService : ServiceBase, IUserService
 {
     public UserService(ProjectContext context, IMapper mapper) : base(context, mapper)
     {
+    }
+
+    public async Task<DeletedUserDTO> DeleteUser(int userId)
+    {
+        var userToDelete = await _context.Users.SingleOrDefaultAsync(u => u.Id == userId);
+        if(userToDelete is null)
+        {
+            throw new NullReferenceException(nameof(userToDelete));
+        }
+
+        _context.Users.Remove(userToDelete);
+        await _context.SaveChangesAsync();
+        return _mapper.Map<DeletedUserDTO>(userToDelete);  
+    }
+
+    public async Task<UserDTO> GetFirst()
+    {
+        return _mapper.Map<UserDTO>(await _context.Users.FirstOrDefaultAsync());
     }
 
     public IEnumerable<UserDTO> GetSortedUsers() => _context
@@ -38,6 +57,4 @@ public class UserService : ServiceBase, IUserService
                 CancelledOrInProgressTasksCount = u.Tasks.Count(t => t.State == 1 || t.State == 3),
                 LongestTask = _mapper.Map<TaskDTO>(u.Tasks.MaxBy(t => t?.FinishedAt - t.CreatedAt)),
             });
-
-
 }

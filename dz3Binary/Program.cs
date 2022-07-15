@@ -1,32 +1,16 @@
-using dz3Binary.Common.Profiles;
-using dz3Binary.DAL.Context;
-using dz3Binary.Extentions;
-using Microsoft.EntityFrameworkCore;
-using System.Text.Json.Serialization;
+namespace dz3Binary;
 
-var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddControllers().AddJsonOptions(option =>  
-option.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
-builder.Services.AddDbContext<ProjectContext>(opt => 
-opt.UseSqlServer(builder.Configuration.GetConnectionString("ProjectDatabase")));
-builder.Services.AddAutoMapper(typeof(MappingProfile));
-builder.Services.AddCustomServices();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+public static class Program
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    public static void Main(string[] args)
+    {
+        CreateHostBuilder(args).Build().Run();
+    }
+
+    public static IHostBuilder CreateHostBuilder(string[] args) =>
+       Host.CreateDefaultBuilder(args)
+           .ConfigureWebHostDefaults(webBuilder =>
+           {
+               webBuilder.UseStartup<Startup>();
+           });
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();

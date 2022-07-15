@@ -3,15 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz3Binary", "dz3Binary\dz3Binary.csproj", "{64674BC1-1CA5-40A9-932A-7AF1E48AC5B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz3Binary", "dz3Binary\dz3Binary.csproj", "{64674BC1-1CA5-40A9-932A-7AF1E48AC5B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz3Binary.DAL", "dz3Binary.DAL\dz3Binary.DAL.csproj", "{0FF239D5-ADB9-45A3-BDA7-C1D18BE7E4BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz3Binary.DAL", "dz3Binary.DAL\dz3Binary.DAL.csproj", "{0FF239D5-ADB9-45A3-BDA7-C1D18BE7E4BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz3Binary.BLL", "dz3Binary.BLL\dz3Binary.BLL.csproj", "{1645C8C6-D890-46A5-B7ED-9E5BA9EDA2C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz3Binary.BLL", "dz3Binary.BLL\dz3Binary.BLL.csproj", "{1645C8C6-D890-46A5-B7ED-9E5BA9EDA2C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz3Binary.Common", "dz3Binary.Common\dz3Binary.Common.csproj", "{6CBA08DA-8CA0-46A2-BCCD-AC452B9E9365}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz3Binary.Common", "dz3Binary.Common\dz3Binary.Common.csproj", "{6CBA08DA-8CA0-46A2-BCCD-AC452B9E9365}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz3Binary.Interface", "dz3Binary.Interface\dz3Binary.Interface.csproj", "{A26F198A-1B0B-45B0-8D60-DA35494BE576}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz3Binary.Interface", "dz3Binary.Interface\dz3Binary.Interface.csproj", "{A26F198A-1B0B-45B0-8D60-DA35494BE576}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{581C9C7D-2BF3-421A-80C6-B2FF85BDB750}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz5Binary.IntegrationTests", "dz5Binary.IntegrationTests\dz5Binary.IntegrationTests.csproj", "{C643FEBA-E698-4BF2-B331-68A368B8C92E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +46,10 @@ Global
 		{A26F198A-1B0B-45B0-8D60-DA35494BE576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26F198A-1B0B-45B0-8D60-DA35494BE576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26F198A-1B0B-45B0-8D60-DA35494BE576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C643FEBA-E698-4BF2-B331-68A368B8C92E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C643FEBA-E698-4BF2-B331-68A368B8C92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C643FEBA-E698-4BF2-B331-68A368B8C92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C643FEBA-E698-4BF2-B331-68A368B8C92E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

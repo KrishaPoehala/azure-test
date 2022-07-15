@@ -29,7 +29,21 @@ public class TaskService : ServiceBase, ITaskService
             .Where(t => t.FinishedAt?.Year == 2022 && t.PerformerId == userId)
             .Select(t => _mapper.Map<IdNameOnlyTaskDTO>(t));
 
+    public async Task<TaskDTO> DeleteTask(int id)
+    {
+        var taskToDelete = await _context.Tasks.SingleOrDefaultAsync(t => t.Id == id);
+        if(taskToDelete is null)
+        {
+            throw new NullReferenceException(nameof(taskToDelete));
+        }
 
+        _context.Tasks.Remove(taskToDelete);
+        await _context.SaveChangesAsync();
+        return _mapper.Map<TaskDTO>(taskToDelete);
+    }
 
-
+    public async Task<TaskDTO> GetFirst()
+    {
+        return _mapper.Map<TaskDTO>(await _context.Tasks.FirstAsync());
+    }
 }

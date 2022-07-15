@@ -2,6 +2,7 @@
 using dz3Binary.BLL.Services.Abstraction;
 using dz3Binary.Common.DTO.Team;
 using dz3Binary.DAL.Context;
+using dz3Binary.DAL.Entities;
 using dz3Binary.DAL.Extentions;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,30 @@ public class TeamService : ServiceBase, ITeamService
 {
     public TeamService(ProjectContext context, IMapper mapper) : base(context, mapper)
     {
+    }
+
+    public async Task<TeamDTO> CreateTeam(NewTeamDTO newTeam)
+    {
+        if(newTeam is null)
+        {
+            throw new ArgumentNullException(nameof(newTeam));
+        }    
+
+        var teamToCreate = _mapper.Map<Team>(newTeam);
+        _context.Add(teamToCreate);
+        await _context.SaveChangesAsync();
+        return _mapper.Map<TeamDTO>(teamToCreate);
+    }
+
+    public async Task<TeamDTO> Get(int id)
+    {
+        var team = await _context.Teams.SingleOrDefaultAsync(u => u.Id == id);
+        if(team is null)
+        {
+            throw new NullReferenceException(nameof(team));
+        }
+
+        return _mapper.Map<TeamDTO>(team);
     }
 
     public IEnumerable<IdNameMembersOnlyTeamDTO> GetTeamInfo() => _context

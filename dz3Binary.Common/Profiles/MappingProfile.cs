@@ -13,13 +13,15 @@ public class MappingProfile : Profile
     public MappingProfile()
     {
         CreateMap<User, UserDTO>();
+        CreateMap<User, DeletedUserDTO>();
 
         CreateMap<Project, ProjectDTO>();
-
+        CreateMap<NewProjectDTO,Project>();
         CreateMap<DAL.Entities.Task, TaskDTO>();
         CreateMap<DAL.Entities.Task, IdNameOnlyTaskDTO>();
 
         CreateMap<Team, TeamDTO>();
         CreateMap<Team, IdNameMembersOnlyTeamDTO>();
+        CreateMap<NewTeamDTO, Team>();
     }
 }
