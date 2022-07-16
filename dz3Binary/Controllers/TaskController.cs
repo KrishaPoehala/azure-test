@@ -58,7 +58,28 @@ public class TaskController : ControllerBase
         return Ok(await _taskService.GetFirst());
     }
 
+    [HttpPut]
+    public async Task<ActionResult> FinishTask(int id)
+    {
+        try
+        {
+            await _taskService.FinishTask(id);
+            return Ok();
+        }
+        catch (NullReferenceException)
+        {
+            return NotFound();
+        }
+        catch (ArgumentException)
+        {
+            return BadRequest();
+        }
+    }
 
-
+    [HttpGet]
+    public ActionResult<IEnumerable<TaskDTO>> GetUnfinishedTask(int userId)
+    {
+        return Ok(_taskService.GetUnfinishedTasks(userId));
+    }
 
 }

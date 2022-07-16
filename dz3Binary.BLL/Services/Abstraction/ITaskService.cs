@@ -10,4 +10,6 @@ public interface ITaskService
     IDictionary<int, ProjectDTO> GetTasksCountByProject(int userId);
     Task<TaskDTO> DeleteTask(int id);
     Task<TaskDTO> GetFirst();
+    Task FinishTask(int id);
+    IEnumerable<TaskDTO> GetUnfinishedTasks(int userId);
 }

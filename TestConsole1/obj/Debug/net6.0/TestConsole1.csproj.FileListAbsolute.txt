@@ -1,5 +1,0 @@
-C:\Users\huawei\source\repos\dz3Binary\TestConsole1\obj\Debug\net6.0\TestConsole1.csproj.AssemblyReference.cache
-C:\Users\huawei\source\repos\dz3Binary\TestConsole1\obj\Debug\net6.0\TestConsole1.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\huawei\source\repos\dz3Binary\TestConsole1\obj\Debug\net6.0\TestConsole1.AssemblyInfoInputs.cache
-C:\Users\huawei\source\repos\dz3Binary\TestConsole1\obj\Debug\net6.0\TestConsole1.AssemblyInfo.cs
-C:\Users\huawei\source\repos\dz3Binary\TestConsole1\obj\Debug\net6.0\TestConsole1.csproj.CoreCompileInputs.cache

@@ -14,6 +14,7 @@ public class MappingProfile : Profile
     {
         CreateMap<User, UserDTO>();
         CreateMap<User, DeletedUserDTO>();
+        CreateMap<NewUserDTO, User>();
 
         CreateMap<Project, ProjectDTO>();
         CreateMap<NewProjectDTO,Project>();

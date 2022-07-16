@@ -46,4 +46,29 @@ public class TaskService : ServiceBase, ITaskService
     {
         return _mapper.Map<TaskDTO>(await _context.Tasks.FirstAsync());
     }
+
+    public async Task FinishTask(int id)
+    {
+        var taskToFinish = await _context.Tasks.SingleOrDefaultAsync(t => t.Id == id);
+        if (taskToFinish is null)
+        {
+            throw new NullReferenceException(nameof(taskToFinish));
+        }
+
+        if (taskToFinish.FinishedAt is not null)
+        {
+            throw new ArgumentException("The task has already been finished at "
+                + taskToFinish.FinishedAt.ToString());
+        }
+
+        taskToFinish.FinishedAt = DateTime.UtcNow;
+        _context.Tasks.Update(taskToFinish);
+        await _context.SaveChangesAsync();
+    }
+
+    public IEnumerable<TaskDTO> GetUnfinishedTasks(int userId) => _context
+        .Tasks
+        .Where(t => t.PerformerId == userId && t.FinishedAt != null)
+        .AsEnumerable()
+        .Select(t => _mapper.Map<TaskDTO>(t));
 }

@@ -1,5 +1,6 @@
 ﻿using dz3Binary.BLL.Services.Abstraction;
 using dz3Binary.Common.DTO.Team;
+using dz3Binary.Common.DTO.User;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dz3Binary.Controllers;
@@ -49,6 +50,20 @@ public class TeamController : ControllerBase
         catch
         {
             return NotFound();
+        }
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> AddMember(UserDTO user,int teamId)
+    {
+        try
+        {
+            await _teamService.AddMember(user, teamId);
+            return Ok();
+        }
+        catch 
+        {
+            return BadRequest();
         }
     }
 

@@ -53,4 +53,19 @@ public class UserController : ControllerBase
     {
         return Ok(await _userService.GetFirst());
     }
+
+    [HttpPost]
+    [Route("create")]
+    public async Task<ActionResult<UserDTO>> PostUser(NewUserDTO dto)
+    {
+        try
+        {
+            return Created("create",
+                await _userService.CreateUser(dto));
+        }
+        catch
+        {
+            return BadRequest();
+        }
+    }
 }

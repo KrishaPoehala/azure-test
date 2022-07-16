@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using dz3Binary.BLL.Services.Abstraction;
 using dz3Binary.Common.DTO.Team;
+using dz3Binary.Common.DTO.User;
 using dz3Binary.DAL.Context;
 using dz3Binary.DAL.Entities;
 using dz3Binary.DAL.Extentions;
@@ -12,6 +13,21 @@ public class TeamService : ServiceBase, ITeamService
 {
     public TeamService(ProjectContext context, IMapper mapper) : base(context, mapper)
     {
+    }
+
+    public async System.Threading.Tasks.Task AddMember(UserDTO dto,int teamToAddId)
+    {
+        var user = _mapper.Map<User>(dto);
+        var team = await _context.Teams
+            .SingleOrDefaultAsync(x => x.Id == teamToAddId);
+
+        if(user is null)
+        {
+            throw new NullReferenceException(nameof(user));
+        }
+
+        team.Members.Add(user);
+        await _context.SaveChangesAsync();
     }
 
     public async Task<TeamDTO> CreateTeam(NewTeamDTO newTeam)

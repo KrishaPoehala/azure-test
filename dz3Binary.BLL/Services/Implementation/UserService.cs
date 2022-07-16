@@ -15,6 +15,19 @@ public class UserService : ServiceBase, IUserService
     {
     }
 
+    public async Task<UserDTO> CreateUser(NewUserDTO dto)
+    {
+        if(dto is null)
+        {
+            throw new NullReferenceException(nameof(dto));
+        }
+
+        var userToCreate = _mapper.Map<User>(dto);
+        _context.Add(userToCreate);
+        await _context.SaveChangesAsync();
+        return _mapper.Map<UserDTO>(userToCreate);
+    }
+
     public async Task<DeletedUserDTO> DeleteUser(int userId)
     {
         var userToDelete = await _context.Users.SingleOrDefaultAsync(u => u.Id == userId);
