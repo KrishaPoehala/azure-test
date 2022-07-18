@@ -27,7 +27,7 @@ public class UserInterface
             .GetMethods()
             .Where(m => m.GetCustomAttribute<TaskToPrintAttribute>() is not null);
     }
-    public async Task Run()
+    public void Run()
     {
         Console.WriteLine("Welcome to my program! Print help to see the commands");
         while (true)

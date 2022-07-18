@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz3Binary", "dz3Binary\dz3Binary.csproj", "{64674BC1-1CA5-40A9-932A-7AF1E48AC5B6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz3Binary.DAL", "dz3Binary.DAL\dz3Binary.DAL.csproj", "{0FF239D5-ADB9-45A3-BDA7-C1D18BE7E4BE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz3Binary.BLL", "dz3Binary.BLL\dz3Binary.BLL.csproj", "{1645C8C6-D890-46A5-B7ED-9E5BA9EDA2C6}"
@@ -20,7 +18,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz5Binary.IntegrationTests", "dz5Binary.IntegrationTests\dz5Binary.IntegrationTests.csproj", "{C643FEBA-E698-4BF2-B331-68A368B8C92E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz5Binary.UnitTests", "dz5Binary.UnitTests\dz5Binary.UnitTests.csproj", "{CD8DAE8E-5AF7-4C40-AB6F-1FB40984FC92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz5Binary.UnitTests", "dz5Binary.UnitTests\dz5Binary.UnitTests.csproj", "{CD8DAE8E-5AF7-4C40-AB6F-1FB40984FC92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz6Binary", "dz6Binary\dz6Binary.csproj", "{45C35D8C-A0E4-482E-BD0B-B583DBC93678}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +28,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{64674BC1-1CA5-40A9-932A-7AF1E48AC5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64674BC1-1CA5-40A9-932A-7AF1E48AC5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64674BC1-1CA5-40A9-932A-7AF1E48AC5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64674BC1-1CA5-40A9-932A-7AF1E48AC5B6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0FF239D5-ADB9-45A3-BDA7-C1D18BE7E4BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0FF239D5-ADB9-45A3-BDA7-C1D18BE7E4BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF239D5-ADB9-45A3-BDA7-C1D18BE7E4BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -56,6 +52,10 @@ Global
 		{CD8DAE8E-5AF7-4C40-AB6F-1FB40984FC92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD8DAE8E-5AF7-4C40-AB6F-1FB40984FC92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD8DAE8E-5AF7-4C40-AB6F-1FB40984FC92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C35D8C-A0E4-482E-BD0B-B583DBC93678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C35D8C-A0E4-482E-BD0B-B583DBC93678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C35D8C-A0E4-482E-BD0B-B583DBC93678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C35D8C-A0E4-482E-BD0B-B583DBC93678}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

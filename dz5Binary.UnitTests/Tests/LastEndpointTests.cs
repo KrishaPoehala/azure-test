@@ -67,6 +67,5 @@ public class LastEndpointTests
         Assert.NotNull(unfinishedTasks);
         Assert.Equal(result.StatusCode, StatusCodes.Status200OK);
         mockService.Verify(x => x.GetUnfinishedTasks(userId), Times.Once());
-
     }
 }

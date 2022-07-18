@@ -1,5 +1,6 @@
 ﻿
 using AutoMapper;
+using dz3Binary.BLL.Enums;
 using dz3Binary.Common.DTO.Project;
 using dz3Binary.Common.DTO.Task;
 using dz3Binary.Common.DTO.Team;
@@ -18,7 +19,9 @@ public class MappingProfile : Profile
 
         CreateMap<Project, ProjectDTO>();
         CreateMap<NewProjectDTO,Project>();
+
         CreateMap<DAL.Entities.Task, TaskDTO>();
+           
         CreateMap<DAL.Entities.Task, IdNameOnlyTaskDTO>();
 
         CreateMap<Team, TeamDTO>();

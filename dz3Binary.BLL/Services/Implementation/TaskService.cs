@@ -61,6 +61,7 @@ public class TaskService : ServiceBase, ITaskService
                 + taskToFinish.FinishedAt.ToString());
         }
 
+        taskToFinish.State = 2;
         taskToFinish.FinishedAt = DateTime.UtcNow;
         _context.Tasks.Update(taskToFinish);
         await _context.SaveChangesAsync();

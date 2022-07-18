@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\dz3Binary.BLL\dz3Binary.BLL.csproj" />
-    <ProjectReference Include="..\dz3Binary\dz3Binary.csproj" />
   </ItemGroup>
 
 </Project>
