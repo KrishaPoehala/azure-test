@@ -17,6 +17,13 @@ public class UserController : ControllerBase
         _userService = userService;
     }
 
+    [HttpPut]
+    [Route("put")]
+    public async Task<ActionResult> PutUser(UserDTO userDTO)
+    {
+        await _userService.PutUser(userDTO);
+        return Ok();
+    }
     [HttpGet]
     [Route("sortedUsers")]
     public ActionResult<IEnumerable<UserDTO>> GetSortedUsers()

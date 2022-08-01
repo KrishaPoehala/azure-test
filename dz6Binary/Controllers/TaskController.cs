@@ -20,6 +20,14 @@ public class TaskController : ControllerBase
         _taskService = taskService;
     }
 
+    [HttpPut]
+    [Route("put")]
+    public async Task<ActionResult> PutTask(TaskDTO dto)
+    {
+        await _taskService.UpdateTask(dto);
+        return Ok();
+    }
+
     [HttpGet]
     [Route("tasksCountByProject/{userId}")]
     public ActionResult<IDictionary<int, ProjectDTO>> GetTasksCountByProject(int userId)

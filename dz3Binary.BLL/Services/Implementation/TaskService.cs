@@ -72,4 +72,13 @@ public class TaskService : ServiceBase, ITaskService
         .Where(t => t.PerformerId == userId && t.FinishedAt != null)
         .AsEnumerable()
         .Select(t => _mapper.Map<TaskDTO>(t));
+
+    public async Task UpdateTask(TaskDTO dto)
+    {
+        var task = await _context.Tasks.FirstOrDefaultAsync(x => x.Id == dto.Id);
+        task.Description = dto.Description;
+        task.RenamedName = dto.RenamedName;
+        await _context.SaveChangesAsync();
+
+    }
 }

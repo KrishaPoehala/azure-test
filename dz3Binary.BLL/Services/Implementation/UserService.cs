@@ -15,6 +15,16 @@ public class UserService : ServiceBase, IUserService
     {
     }
 
+    public async System.Threading.Tasks.Task PutUser(UserDTO dto)
+    {
+        var user = await _context.Users.FirstOrDefaultAsync(x => x.Id == dto.Id);
+        user.Email = dto.Email;
+        user.BirthDay = dto.BirthDay;
+        user.LastName = dto.LastName;
+        user.FirstName = dto.FirstName;
+        await _context.SaveChangesAsync();
+    }
+
     public async Task<UserDTO> CreateUser(NewUserDTO dto)
     {
         if(dto is null)

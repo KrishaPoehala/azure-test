@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cmyQvWwDTy2KPGCjqq0nSPV2bGJd4+0MweRtDWRW+bW8GQhXV2HIWCHZn9XMESmGIoP9IXjdDhbTc83szorn5Q==",
+  "dgSpecHash": "NNy/ohcWfwZYgzX62XEGL9edMwHbWW+LQ1Zwe6uOsCEjEmwqewgqB1KTUFzsudh4/QhAC6ZV2RDVAyE1VXRUBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.Interface\\dz3Binary.Interface.csproj",
+  "projectFilePath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.Interface\\dz3Binary.Interface.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huawei\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\huawei\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",

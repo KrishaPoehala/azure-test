@@ -30,6 +30,10 @@ namespace dz6Binary
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(p => p.AddPolicy("corsapp", builder =>
+            {
+                builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+            }));
             services.AddAutoMapper(typeof(MappingProfile));
             services.AddDbContext<ProjectContext>(opt =>
         opt.UseSqlServer(Configuration.GetConnectionString("ProjectDatabase")));
@@ -56,7 +60,7 @@ namespace dz6Binary
             
             
             app.UseRouting();
-
+            app.UseCors("corsapp");
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

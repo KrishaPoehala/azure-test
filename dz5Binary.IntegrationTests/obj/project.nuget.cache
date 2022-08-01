@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H1VY96CxdyWq6Yh6pafuRYR1BdfFT5ybldMpiyHAL53sdwLqMZO7xHsFfy0jpi8Qv8sJfl5Ospfy+JJnk52wMA==",
+  "dgSpecHash": "P5cpmrDUD/upTlHiHymOu37JmAG2ZI9y+9CgIPQG4v4T7phCd5UFYG0vNbF5VD9cJiusBk+1oZnM0BPYo4quxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz5Binary.IntegrationTests\\dz5Binary.IntegrationTests.csproj",
+  "projectFilePath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz5Binary.IntegrationTests\\dz5Binary.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huawei\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\huawei\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",

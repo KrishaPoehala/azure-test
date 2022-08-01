@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iuZ14cLTrQ1J23RkuN0TMUB/t7xLIlRsS8QXIV7BRJ5n927wuMkyoRzMcUxbLrrkKMFOSukkG81mn2YEBA3mVA==",
+  "dgSpecHash": "DGOQGDPBRT4ZBuZayhzS0vL8t2E6LtDJ8tmieEM6lyl9YHfZDXVQRiiDkmZwmfxmI+oYTVOM0B8bCKr+qCBQ9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj",
+  "projectFilePath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\huawei\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\huawei\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

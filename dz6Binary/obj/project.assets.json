@@ -2140,11 +2140,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz6Binary\\dz6Binary.csproj",
+      "projectUniqueName": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz6Binary\\dz6Binary.csproj",
       "projectName": "dz6Binary",
-      "projectPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz6Binary\\dz6Binary.csproj",
+      "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz6Binary\\dz6Binary.csproj",
       "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz6Binary\\obj\\",
+      "outputPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz6Binary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2161,11 +2161,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj": {
-              "projectPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj"
+            "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj": {
+              "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj"
             },
-            "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.Common\\dz3Binary.Common.csproj": {
-              "projectPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.Common\\dz3Binary.Common.csproj"
+            "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.Common\\dz3Binary.Common.csproj": {
+              "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.Common\\dz3Binary.Common.csproj"
             }
           }
         }

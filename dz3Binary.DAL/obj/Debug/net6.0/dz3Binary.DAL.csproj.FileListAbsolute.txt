@@ -10,3 +10,15 @@ C:\Users\huawei\source\repos\dz3Binary\dz3Binary.DAL\obj\Debug\net6.0\dz3Binary.
 C:\Users\huawei\source\repos\dz3Binary\dz3Binary.DAL\obj\Debug\net6.0\ref\dz3Binary.DAL.dll
 C:\Users\huawei\source\repos\dz3Binary\dz3Binary.DAL\obj\Debug\net6.0\dz3Binary.DAL.pdb
 C:\Users\huawei\source\repos\dz3Binary\dz3Binary.DAL\obj\Debug\net6.0\dz3Binary.DAL.csproj.AssemblyReference.cache
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\bin\Debug\net6.0\dz3Binary.DAL.deps.json
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\bin\Debug\net6.0\dz3Binary.DAL.dll
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\bin\Debug\net6.0\ref\dz3Binary.DAL.dll
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\bin\Debug\net6.0\dz3Binary.DAL.pdb
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\obj\Debug\net6.0\dz3Binary.DAL.csproj.AssemblyReference.cache
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\obj\Debug\net6.0\dz3Binary.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\obj\Debug\net6.0\dz3Binary.DAL.AssemblyInfoInputs.cache
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\obj\Debug\net6.0\dz3Binary.DAL.AssemblyInfo.cs
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\obj\Debug\net6.0\dz3Binary.DAL.csproj.CoreCompileInputs.cache
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\obj\Debug\net6.0\dz3Binary.DAL.dll
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\obj\Debug\net6.0\ref\dz3Binary.DAL.dll
+C:\Users\huawei\Source\Repos\dz5binary\dz3Binary.DAL\obj\Debug\net6.0\dz3Binary.DAL.pdb

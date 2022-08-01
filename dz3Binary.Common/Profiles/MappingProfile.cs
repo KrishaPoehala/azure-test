@@ -21,7 +21,7 @@ public class MappingProfile : Profile
         CreateMap<NewProjectDTO,Project>();
 
         CreateMap<DAL.Entities.Task, TaskDTO>();
-           
+        CreateMap<TaskDTO, DAL.Entities.Task>();
         CreateMap<DAL.Entities.Task, IdNameOnlyTaskDTO>();
 
         CreateMap<Team, TeamDTO>();

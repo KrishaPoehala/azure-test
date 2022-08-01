@@ -12,4 +12,5 @@ public interface ITaskService
     Task<TaskDTO> GetFirst();
     Task FinishTask(int id);
     IEnumerable<TaskDTO> GetUnfinishedTasks(int userId);
+    Task UpdateTask(TaskDTO dto);
 }

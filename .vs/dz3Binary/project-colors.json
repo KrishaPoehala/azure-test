@@ -80,7 +80,12 @@
       "ProjectGuid": "cd8dae8e-5af7-4c40-ab6f-1fb40984fc92",
       "DisplayName": "dz5Binary.UnitTests",
       "ColorIndex": 14
+    },
+    "45c35d8c-a0e4-482e-bd0b-b583dbc93678": {
+      "ProjectGuid": "45c35d8c-a0e4-482e-bd0b-b583dbc93678",
+      "DisplayName": "dz6Binary",
+      "ColorIndex": 15
     }
   },
-  "NextColorIndex": 15
+  "NextColorIndex": 0
 }

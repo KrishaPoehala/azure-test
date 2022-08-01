@@ -9,5 +9,6 @@ namespace dz3Binary.BLL.Services.Abstraction
         Task<DeletedUserDTO> DeleteUser(int userId);
         Task<UserDTO> GetFirst();
         Task<UserDTO> CreateUser(NewUserDTO dto);
+        Task PutUser(UserDTO userDTO);
     }
 }

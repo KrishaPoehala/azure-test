@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\dz3Binary.BLL",
+    "\\dz3Binary.BLL\\Services",
+    "\\dz3Binary.BLL\\Services\\Implementation",
+    "\\dz3Binary.DAL",
+    "\\dz3Binary.Interface",
+    "\\dz6Binary",
+    "\\dz6Binary\\Controllers"
+  ],
+  "SelectedNode": "\\dz6Binary\\Controllers\\TaskController.cs",
+  "PreviewInSolutionExplorer": false
+}

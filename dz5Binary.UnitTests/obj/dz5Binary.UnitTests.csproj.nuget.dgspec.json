@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz5Binary.UnitTests\\dz5Binary.UnitTests.csproj": {}
+    "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz5Binary.UnitTests\\dz5Binary.UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj": {
+    "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj",
         "projectName": "dz3Binary.BLL",
-        "projectPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj",
+        "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj",
         "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.BLL\\obj\\",
+        "outputPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.Common\\dz3Binary.Common.csproj": {
-                "projectPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.Common\\dz3Binary.Common.csproj"
+              "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.Common\\dz3Binary.Common.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.Common\\dz3Binary.Common.csproj"
               },
-              "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj": {
-                "projectPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj"
+              "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.Common\\dz3Binary.Common.csproj": {
+    "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.Common\\dz3Binary.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.Common\\dz3Binary.Common.csproj",
+        "projectUniqueName": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.Common\\dz3Binary.Common.csproj",
         "projectName": "dz3Binary.Common",
-        "projectPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.Common\\dz3Binary.Common.csproj",
+        "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.Common\\dz3Binary.Common.csproj",
         "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.Common\\obj\\",
+        "outputPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -103,8 +103,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj": {
-                "projectPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj"
+              "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj"
               }
             }
           }
@@ -143,14 +143,14 @@
         }
       }
     },
-    "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj": {
+    "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj",
         "projectName": "dz3Binary.DAL",
-        "projectPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj",
+        "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.DAL\\dz3Binary.DAL.csproj",
         "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.DAL\\obj\\",
+        "outputPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -219,14 +219,14 @@
         }
       }
     },
-    "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz5Binary.UnitTests\\dz5Binary.UnitTests.csproj": {
+    "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz5Binary.UnitTests\\dz5Binary.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz5Binary.UnitTests\\dz5Binary.UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz5Binary.UnitTests\\dz5Binary.UnitTests.csproj",
         "projectName": "dz5Binary.UnitTests",
-        "projectPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz5Binary.UnitTests\\dz5Binary.UnitTests.csproj",
+        "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz5Binary.UnitTests\\dz5Binary.UnitTests.csproj",
         "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz5Binary.UnitTests\\obj\\",
+        "outputPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz5Binary.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -243,8 +243,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj": {
-                "projectPath": "C:\\Users\\huawei\\source\\repos\\dz3Binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj"
+              "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj"
+              },
+              "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz6Binary\\dz6Binary.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz6Binary\\dz6Binary.csproj"
               }
             }
           }
@@ -259,6 +262,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[6.0.6, )"
@@ -299,6 +306,76 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz6Binary\\dz6Binary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz6Binary\\dz6Binary.csproj",
+        "projectName": "dz6Binary",
+        "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz6Binary\\dz6Binary.csproj",
+        "packagesPath": "C:\\Users\\huawei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz6Binary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\huawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.BLL\\dz3Binary.BLL.csproj"
+              },
+              "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.Common\\dz3Binary.Common.csproj": {
+                "projectPath": "C:\\Users\\huawei\\Source\\Repos\\dz5binary\\dz3Binary.Common\\dz3Binary.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
