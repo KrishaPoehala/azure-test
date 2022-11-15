@@ -2,6 +2,7 @@
 using dz3Binary.DAL.Context;
 using dz5Binary.IntegrationTests.CustomFactories;
 using dz5Binary.IntegrationTests.Helpers;
+using dz6Binary;
 using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http;
 

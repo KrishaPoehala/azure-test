@@ -1,6 +1,7 @@
 ﻿using dz3Binary;
 using dz3Binary.Common.DTO.Task;
 using dz5Binary.IntegrationTests.CustomFactories;
+using dz6Binary;
 using FluentAssertions;
 using System.Net.Http.Json;
 using System.Threading.Tasks;

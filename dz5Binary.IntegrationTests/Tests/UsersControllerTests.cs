@@ -3,6 +3,7 @@ using dz3Binary.Common.DTO.User;
 using dz5Binary.IntegrationTests.CustomFactories;
 using dz5Binary.IntegrationTests.Helpers;
 using dz5Binary.IntegrationTests.Tests;
+using dz6Binary;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using System.Net.Http.Json;

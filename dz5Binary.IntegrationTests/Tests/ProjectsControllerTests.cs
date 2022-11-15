@@ -1,6 +1,7 @@
 using dz3Binary;
 using dz3Binary.Common.DTO.Project;
 using dz5Binary.IntegrationTests.CustomFactories;
+using dz6Binary;
 using FluentAssertions;
 using System.Collections.Generic;
 using System.Net.Http.Json;
