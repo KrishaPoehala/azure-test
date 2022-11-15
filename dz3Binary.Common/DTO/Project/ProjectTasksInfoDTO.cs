@@ -10,3 +10,4 @@ public record ProjectTasksInfoDTO
     public TaskDTO ShortestTask { get; init; }
     public int UsersCount { get; init; }
 }
+    

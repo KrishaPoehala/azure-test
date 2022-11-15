@@ -5,6 +5,7 @@
     "\\dz3Binary.BLL\\Services",
     "\\dz3Binary.BLL\\Services\\Implementation",
     "\\dz3Binary.DAL",
+    "\\dz3Binary.DAL\\Entities",
     "\\dz3Binary.Interface",
     "\\dz6Binary",
     "\\dz6Binary\\Controllers"
